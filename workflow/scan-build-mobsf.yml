@@ -97,7 +97,7 @@ jobs:
             [System.IO.File]::WriteAllBytes('${{ env.MOBSF_PDF_FILE }}', $response.Content)
           }
 
-      - name: Upload MobSF Analysis PDF Result
+      - name: Upload do relatorio PDF do MobSF com resultados da analise
         uses: actions/upload-artifact@v4.6.1
         with:
           name: ${{ env.MOBSF_PDF_FILE }}
